@@ -1,0 +1,32 @@
+.clock-container {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #f0f0f0;
+  background-color: #121212;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.day-name {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 8rem;
+  margin: 2rem 0;
+}
+
+date {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.part-of-day {
+  font-size: 6rem;
+}
+
+.emoji {
+  margin-right: 1rem;
+}
