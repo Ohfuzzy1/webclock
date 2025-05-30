@@ -1,11 +1,18 @@
 .clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.time, .date {
+  font-size: 8rem;
+  color: #f0f0f0;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  color: #f0f0f0;
-  background-color: #121212;
-  min-height: 100vh;
-  padding: 2rem;
-  text-align: center;
+  margin: 1rem 0;
 }
 
 .day-name {
@@ -19,8 +26,8 @@
 }
 
 date {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+    font-size: 6rem;
+    margin-bottom: 1rem;
 }
 
 .part-of-day {
