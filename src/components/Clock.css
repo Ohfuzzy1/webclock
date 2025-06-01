@@ -28,6 +28,7 @@
 
 .emoji {
   margin-right: 1rem;
+  font-size: 15rem;
 }
 
 .ampm.am {
@@ -38,13 +39,14 @@
 }
 
 .ampm-large {
-  font-size: 12rem;
-  font-weight: bold;
-  line-height: 1;
-}
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1; /* Keep this if you want tightly spaced text */
+    text-shadow: 2px 2px 0 #8511e4, -2px -4px 0 #4d0606, 2px -2px 0 #000, -2px 2px 0 #08584e; /* Adjust values for outline thickness and color */
+  }
 .ampm-large.am {
   color: #FFD600;
 }
 .ampm-large.pm {
-  color: #928f8f;
+  color: #6d6767;
 } 
