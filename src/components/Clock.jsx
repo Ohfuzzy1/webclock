@@ -51,6 +51,7 @@ const Clock = () => {
         <span className="day-name">{dayName} </span>
         <span className="emoji">{partOfDay.emoji}</span>
         <span className="text">{partOfDay.text}</span>
+        <span className={`ampm ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</span>
         
       </div>
     </div>
