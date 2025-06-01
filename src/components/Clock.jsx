@@ -35,12 +35,17 @@ const Clock = () => {
   const partOfDay = getPartOfDay();
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const dayName = days[time.getDay()];
-  const formattedTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   const ampm = time.getHours() < 12 ? 'AM' : 'PM';
 
+
+
+
+
+  
   return (
     <div className="clock-container">
-      <span className="time">{formattedTime} <span className={`ampm ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</span></span>
+      <span className="time">{time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}</span>
+      <div className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</div>
       <span className="date">{formatDate(time)}</span>
       <div className="part-of-day">
         <span className="day-name">{dayName} </span>

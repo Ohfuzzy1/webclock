@@ -36,3 +36,15 @@
 .ampm.pm {
   color: #928f8f;
 }
+
+.ampm-large {
+  font-size: 12rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.ampm-large.am {
+  color: #FFD600;
+}
+.ampm-large.pm {
+  color: #928f8f;
+}
