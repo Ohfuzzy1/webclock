@@ -52,7 +52,7 @@ const Clock = () => {
   
   return (
     <div className="clock-container">
-      <span className="time">{extractedTime}</span>
+      <span className="time">{extractedTime} </span>
       {/* <span className="time">{time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}</span> */}
       
       <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span>
