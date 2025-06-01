@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 80vh;
   background-color: #000000;
 }
 
@@ -14,29 +14,29 @@
 }
 
 .date {
-    font-size: 8rem;
+    font-size: 4rem;
   }
 
 .day-name {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 .time {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 .part-of-day {
-  font-size: 10rem;
+  font-size: 4rem;
 }
 
 .emoji {
   margin-right: 1rem;
-  font-size: 10rem;
+  font-size: 5rem;
 }
 
 .ampm-large {
       font-weight: bold;
-      font-size: 13rem;
+      font-size: 6rem;
     line-height: 1; /* Keep this if you want tightly spaced text */
     text-shadow: 2px 2px 0 #8511e4, -2px -4px 0 #4d0606, 2px -2px 0 #000, -2px 2px 0 #08584e; /* Adjust values for outline thickness and color */
   }
