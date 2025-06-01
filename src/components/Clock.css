@@ -3,37 +3,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 30vh;
   background-color: #000000;
 }
 
 .time, .date {
-  font-size: 8rem;
+  font-size: 10rem;
   color: #f0f0f0;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .day-name {
-  font-size: 6rem;
-  margin-bottom: 1rem;
+  font-size: 8rem;
+  /* margin-bottom: 1rem; */
 }
 
 .time {
-  font-size: 8rem;
-  margin: 2rem 0;
+  font-size: 15rem;
+  /* margin: 2rem 0; */
 }
 
 date {
-    font-size: 6rem;
-    margin-bottom: 1rem;
+    font-size: 10rem;
+    /* margin-bottom: 1rem; */
 }
 
 .part-of-day {
-  font-size: 6rem;
+  font-size: 10rem;
 }
 
 .emoji {
   margin-right: 1rem;
+}
+
+.ampm.am {
+  color: #FFD600;
+}
+.ampm.pm {
+  color: #D3D3D3;
 }

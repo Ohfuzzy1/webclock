@@ -23,6 +23,15 @@ const Clock = () => {
     return { text: 'Night', emoji: '🌃' };
   };
 
+  const formatDate = (date) => {
+    const months = [
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    const month = months[date.getMonth()];
+    const day = String(date.getDate()).padStart(2, '0');
+    const year = date.getFullYear();
+    return `${month} ${day}, ${year}`;
+  };
   const partOfDay = getPartOfDay();
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const dayName = days[time.getDay()];
@@ -30,13 +39,14 @@ const Clock = () => {
 
   return (
     <div className="clock-container">
-            {/* <span  className="time">{formattedTime}</span> */}
+            <span  className="time">{formattedTime}</span>
+            <span  className="date">{formatDate(time)}      </span>
             {/* <span  className="date">{time.toLocaleDateString()}      </span> */}
-           <div className="clock">
-           <span className="time">{formattedTime}   </span>
-           <span className="date">{time.toLocaleDateString()}</span>
+            {/* <div className="clock"> */}
+           {/* <span className="time">{formattedTime}   </span> */}
+           {/* <span className="date">{formatDate(time)}</span> */}
            
-         </div>
+         {/* </div> */}
       <div className="part-of-day">
         <span className="day-name">{dayName} </span>
         <span className="emoji">{partOfDay.emoji}</span>
