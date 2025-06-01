@@ -54,7 +54,10 @@ const Clock = () => {
     <div className="clock-container">
       <span className="time">{extractedTime} </span>
       {/* <span className="time">{time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}</span> */}     
-      <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span>
+      {/* <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span> */}
+       <div className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</div>
+      
+      
         <div className="part-of-day">
         <span className="day-name">{dayName} </span>
         <span className="emoji">{partOfDay.emoji}</span>
