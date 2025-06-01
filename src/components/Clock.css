@@ -12,22 +12,14 @@
   color: #f0f0f0;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  /* margin: 1rem 0; */
 }
 
 .day-name {
   font-size: 8rem;
-  /* margin-bottom: 1rem; */
 }
 
 .time {
   font-size: 15rem;
-  /* margin: 2rem 0; */
-}
-
-date {
-    font-size: 10rem;
-    /* margin-bottom: 1rem; */
 }
 
 .part-of-day {

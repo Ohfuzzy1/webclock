@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Clock.css'; // Create this file for styles
+import './Clock.css';
 
 const Clock = () => {
   const [time, setTime] = useState(new Date());
-  
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
@@ -36,23 +36,16 @@ const Clock = () => {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const dayName = days[time.getDay()];
   const formattedTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const ampm = time.getHours() < 12 ? 'AM' : 'PM';
 
   return (
     <div className="clock-container">
-            <span  className="time">{formattedTime} </span>
-            <span  className="date">{formatDate(time)}      </span>
-            {/* <span  className="date">{time.toLocaleDateString()}      </span> */}
-            {/* <div className="clock"> */}
-           {/* <span className="time">{formattedTime}   </span> */}
-           {/* <span className="date">{formatDate(time)}</span> */}
-           
-         {/* </div> */}
+      <span className="time">{formattedTime} <span className={`ampm ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</span></span>
+      <span className="date">{formatDate(time)}</span>
       <div className="part-of-day">
         <span className="day-name">{dayName} </span>
         <span className="emoji">{partOfDay.emoji}</span>
         <span className="text">{partOfDay.text}</span>
-        <span className={`ampm ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</span>
-        
       </div>
     </div>
   );
