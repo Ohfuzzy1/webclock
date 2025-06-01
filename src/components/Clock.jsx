@@ -39,7 +39,7 @@ const Clock = () => {
 
   return (
     <div className="clock-container">
-            <span  className="time">{formattedTime}</span>
+            <span  className="time">{formattedTime} </span>
             <span  className="date">{formatDate(time)}      </span>
             {/* <span  className="date">{time.toLocaleDateString()}      </span> */}
             {/* <div className="clock"> */}
