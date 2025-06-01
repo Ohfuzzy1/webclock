@@ -30,12 +30,18 @@ const Clock = () => {
 
   return (
     <div className="clock-container">
-      <div className="day-name">{dayName}</div>
-      <div className="time">{formattedTime}</div>
-      <div className="date">{time.toLocaleDateString()}</div>
+            {/* <span  className="time">{formattedTime}</span> */}
+            {/* <span  className="date">{time.toLocaleDateString()}      </span> */}
+           <div className="clock">
+           <span className="time">{formattedTime}   </span>
+           <span className="date">{time.toLocaleDateString()}</span>
+           
+         </div>
       <div className="part-of-day">
+        <span className="day-name">{dayName} </span>
         <span className="emoji">{partOfDay.emoji}</span>
         <span className="text">{partOfDay.text}</span>
+        
       </div>
     </div>
   );
