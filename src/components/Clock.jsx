@@ -13,7 +13,7 @@ const Clock = () => {
 
   const getPartOfDay = () => {
     const hours = time.getHours();
-    if (hours < 4) return { text: 'Very Late Night', emoji: '🌌' };
+    if (hours < 4) return { text: 'Late Night', emoji: '🌌' };
     if (hours < 6) return { text: 'Early Morning', emoji: '🌄' };
     if (hours < 9) return { text: 'Morning', emoji: '🌅' };
     if (hours < 12) return { text: 'Late Morning', emoji: '☀️' };
@@ -52,19 +52,22 @@ const Clock = () => {
   
   return (
     <div className="clock-container">
-      <span className="time">{extractedTime} </span>
+      <span className="time">{extractedTime}   </span>
+      
       {/* <span className="time">{time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}</span> */}     
       {/* <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span> */}
-       {/* <div className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</div> */}
+     
+       <div className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm}</div>
       
       
-        <div className="part-of-day">
-        <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span>
+      <div className="part-of-day">
+        {/* <span className={`ampm-large ${ampm === 'AM' ? 'am' : 'pm'}`}>{ampm} </span> */}
         <span className="emoji">{partOfDay.emoji}</span>
         <span className="text">{partOfDay.text}</span>
         {/* <span className="day-name">{dayName} </span> */}
-        <div className="day-name">{dayName} </div>
       </div>
+      <div className="day-name">{dayName} </div>
+     
       <span className="date">{formatDate(time)}</span>
     </div>
   );
