@@ -15,7 +15,7 @@ function App() {
       <span onClick={toggleNotes} style={{ cursor: 'pointer' }}>🔍</span>
       {showNotes && (
         <div className="readme">
-          <p>It's a clock for folks who get confused.</p>
+          <p>It's a clock for folks who need help with the phases of the day.</p>
           <p>12:56 AM 🌌Late Night Sunday Jun 01, 2025</p>
           <p>Descriptive Emojis & Part of the day</p>
           <ul>
