@@ -14,19 +14,19 @@
 }
 
 .date {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
 .day-name {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .time {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .part-of-day {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .emoji {
